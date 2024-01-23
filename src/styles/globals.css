@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #121212;
+    --foreground: #ffffff;
+    --primary: #1bd760;
+    --secondary: #a7a7a7;
+    --muted: #232323;
+    --card: #181818;
+    --popover: #282828;
+    --destructive: #e91528;
+    --input: #727272;
+    --ring: #ffffff;
+    --radius: 0.5rem;
+  }
+}
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
