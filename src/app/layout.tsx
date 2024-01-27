@@ -1,10 +1,11 @@
 import '@/styles/globals.css';
 
+import { SidebarLayout } from '@/components';
+import { font } from '@/const/fonts';
 import { cn } from '@/lib/tailwind/utils';
 
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { font } from '@/const/fonts';
 
 export const metadata: Metadata = {
   title: 'Tunify',
@@ -12,23 +13,17 @@ export const metadata: Metadata = {
     'Tunify is a music streaming service that allows you to listen to any song, anywhere, anytime.',
 };
 
-interface IRootLayoutProps {
+interface RootLayoutProps {
   children: ReactNode;
 }
 
-export default function RootLayout({ children }: IRootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      {/* Reducing hydration error. Reference : https://nextjs.org/docs/messages/react-hydration-error */}
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body
-          className={cn(
-            font.className,
-            'min-h-screen antialiased font-figtree'
-          )}
-        >
-          {children}
+        <body className={cn(font.className, 'min-h-screen w-full antialiased')}>
+          <SidebarLayout>{children}</SidebarLayout>
         </body>
       </html>
     </>

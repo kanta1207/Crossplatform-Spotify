@@ -16,8 +16,9 @@ module.exports = {
       colors: {
         input: 'var(--input)',
         ring: 'var(--ring)',
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        'pure-black': 'var(--pure-black)',
+        black: 'var(--black)',
+        white: 'var(--white)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         destructive: 'var(--destructive)',

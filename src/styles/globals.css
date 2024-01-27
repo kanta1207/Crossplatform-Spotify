@@ -4,8 +4,9 @@
 
 @layer base {
   :root {
-    --background: #121212;
-    --foreground: #ffffff;
+    --pure-black: #000000;
+    --black: #121212;
+    --white: #ffffff;
     --primary: #1bd760;
     --secondary: #a7a7a7;
     --muted: #232323;
@@ -19,6 +20,6 @@
 }
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-pure-black text-white;
   }
 }
