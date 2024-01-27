@@ -8,9 +8,9 @@ interface SidebarLayoutProps {
 
 export const SidebarLayout: FC<SidebarLayoutProps> = ({ children }) => {
   return (
-    <div className="flex h-full">
-      <Sidebar songs={[]} />
-      <main className="h-full flex-1 overflow-y-auto py-2">{children}</main>
+    <div className="flex gap-x-4 h-full p-2">
+      <Sidebar items={[]} />
+      <main className="h-full w-full overflow-y-auto">{children}</main>
     </div>
   );
 };

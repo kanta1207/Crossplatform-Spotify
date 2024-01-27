@@ -1,17 +1,17 @@
 'use client';
 
 import { Card } from '@/components/ui';
-import { Song } from '@/types';
+import { Item } from '@/types';
 
 import { ListMusic, Plus } from 'lucide-react';
 
 // import MediaItem from './MediaItem';
 
 interface LibraryProps {
-  songs: Song[];
+  items: Item[];
 }
 
-export const Library: React.FC<LibraryProps> = ({ songs }) => {
+export const Library: React.FC<LibraryProps> = ({ items }) => {
   return (
     <Card asChild color="black">
       <div className="overflow-y-auto h-full">
@@ -32,7 +32,7 @@ export const Library: React.FC<LibraryProps> = ({ songs }) => {
             />
           </div>
           <div className="flex flex-col gap-y-2 mt-4 px-3">
-            {/* {songs.map((item) => (
+            {/* {items.map((item) => (
           <MediaItem onClick={(id: string) => onPlay(id)} key={item.id} data={item} />
         ))} */}
           </div>

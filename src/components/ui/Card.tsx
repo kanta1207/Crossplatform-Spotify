@@ -4,7 +4,7 @@ import { Slot } from '@radix-ui/react-slot';
 import { cva, VariantProps } from 'class-variance-authority';
 import { forwardRef, HTMLAttributes } from 'react';
 
-const cardVariants = cva('rounded px-4 py-2', {
+const cardVariants = cva('rounded p-4', {
   variants: {
     color: {
       none: '',

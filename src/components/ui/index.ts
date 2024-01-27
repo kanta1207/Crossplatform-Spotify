@@ -1,2 +1,3 @@
-export { Button, buttonVariants } from './Button';
+export { Button, type ButtonProps, buttonVariants } from './Button';
 export { Card } from './Card';
+export { StyledImage } from './StyledImage';
